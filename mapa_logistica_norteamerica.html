@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_574637d44b8d100c7a635f2c2fdef42a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_574637d44b8d100c7a635f2c2fdef42a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_574637d44b8d100c7a635f2c2fdef42a = L.map(
+                "map_574637d44b8d100c7a635f2c2fdef42a",
+                {
+                    center: [29.5, -95.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e18a1b4062e14bc2e892ebb6611bd56 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4e18a1b4062e14bc2e892ebb6611bd56.addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+            var marker_6247627bda4ce34a2a8480aa532a89f7 = L.marker(
+                [29.62, -95.01],
+                {
+}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+            var icon_3bd6b21f670c6b531b50ee77ad415c61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d95cbba096fc4f48f3fc9bbd3f9f36f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4270c6bd0fa400e6a5bc017c9af261ca = $(`<div id="html_4270c6bd0fa400e6a5bc017c9af261ca" style="width: 100.0%; height: 100.0%;">Planta Bayport</div>`)[0];
+                popup_0d95cbba096fc4f48f3fc9bbd3f9f36f.setContent(html_4270c6bd0fa400e6a5bc017c9af261ca);
+            
+        
+
+        marker_6247627bda4ce34a2a8480aa532a89f7.bindPopup(popup_0d95cbba096fc4f48f3fc9bbd3f9f36f)
+        ;
+
+        
+    
+    
+                marker_6247627bda4ce34a2a8480aa532a89f7.setIcon(icon_3bd6b21f670c6b531b50ee77ad415c61);
+            
+    
+            var circle_marker_930aac92202c9f811656fa52405d9dc2 = L.circleMarker(
+                [29.76, -95.37],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_6070ec0a1f157b638a93ca21616b6812 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a217935709703ff054d89827c8df02cc = $(`<div id="html_a217935709703ff054d89827c8df02cc" style="width: 100.0%; height: 100.0%;">COPEQ Houston</div>`)[0];
+                popup_6070ec0a1f157b638a93ca21616b6812.setContent(html_a217935709703ff054d89827c8df02cc);
+            
+        
+
+        circle_marker_930aac92202c9f811656fa52405d9dc2.bindPopup(popup_6070ec0a1f157b638a93ca21616b6812)
+        ;
+
+        
+    
+    
+            var circle_marker_d1ae6c9b1df770dae526d99edd0a3bb5 = L.circleMarker(
+                [38.57, -92.6],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_dda9db1ea578a86a1d33a007f686583e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d5a626dfc3c08385acabf2376bb4a3d = $(`<div id="html_5d5a626dfc3c08385acabf2376bb4a3d" style="width: 100.0%; height: 100.0%;">CJ Chemicals MO</div>`)[0];
+                popup_dda9db1ea578a86a1d33a007f686583e.setContent(html_5d5a626dfc3c08385acabf2376bb4a3d);
+            
+        
+
+        circle_marker_d1ae6c9b1df770dae526d99edd0a3bb5.bindPopup(popup_dda9db1ea578a86a1d33a007f686583e)
+        ;
+
+        
+    
+    
+            var circle_marker_4f5ee3e75c907911c90c37e67510cc17 = L.circleMarker(
+                [40.71, -74.01],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_f94a1b5232db8e41ce5c56343f1bfe3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07422aaa6a15123c95c98cd36cb8e39e = $(`<div id="html_07422aaa6a15123c95c98cd36cb8e39e" style="width: 100.0%; height: 100.0%;">BOC Sciences NY</div>`)[0];
+                popup_f94a1b5232db8e41ce5c56343f1bfe3f.setContent(html_07422aaa6a15123c95c98cd36cb8e39e);
+            
+        
+
+        circle_marker_4f5ee3e75c907911c90c37e67510cc17.bindPopup(popup_f94a1b5232db8e41ce5c56343f1bfe3f)
+        ;
+
+        
+    
+    
+            var circle_marker_8a2521026e396856a4baa0a50b284b1a = L.circleMarker(
+                [19.3, -99.66],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_7842decd327540a16a5565bb323bce2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_276a11a1e5f13d973088ae741c3d0eb6 = $(`<div id="html_276a11a1e5f13d973088ae741c3d0eb6" style="width: 100.0%; height: 100.0%;">Trade Chem EdoMex</div>`)[0];
+                popup_7842decd327540a16a5565bb323bce2a.setContent(html_276a11a1e5f13d973088ae741c3d0eb6);
+            
+        
+
+        circle_marker_8a2521026e396856a4baa0a50b284b1a.bindPopup(popup_7842decd327540a16a5565bb323bce2a)
+        ;
+
+        
+    
+    
+            var circle_marker_a421e1cff51d00bb2fad3028215121a1 = L.circleMarker(
+                [20.67, -103.35],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_e5561b030c5f7130827240ff88cb1497 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd2a163684616d9ed545df9282622227 = $(`<div id="html_fd2a163684616d9ed545df9282622227" style="width: 100.0%; height: 100.0%;">Suministro Jalisco</div>`)[0];
+                popup_e5561b030c5f7130827240ff88cb1497.setContent(html_fd2a163684616d9ed545df9282622227);
+            
+        
+
+        circle_marker_a421e1cff51d00bb2fad3028215121a1.bindPopup(popup_e5561b030c5f7130827240ff88cb1497)
+        ;
+
+        
+    
+    
+            var circle_marker_35388237a5c34213dbba5ae03b6237c3 = L.circleMarker(
+                [19.54, -99.2],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_0585d7455d78eb8b380289be83b5f286 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b5b22a7ce0b8777eac1464fe584ace4 = $(`<div id="html_8b5b22a7ce0b8777eac1464fe584ace4" style="width: 100.0%; height: 100.0%;">ALVEG Tlalnepantla</div>`)[0];
+                popup_0585d7455d78eb8b380289be83b5f286.setContent(html_8b5b22a7ce0b8777eac1464fe584ace4);
+            
+        
+
+        circle_marker_35388237a5c34213dbba5ae03b6237c3.bindPopup(popup_0585d7455d78eb8b380289be83b5f286)
+        ;
+
+        
+    
+    
+            var circle_marker_5a580de09a48f9f018560eb24ed5b4e6 = L.circleMarker(
+                [29.63, -95.02],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_1cd8a8276e6edd7e62735dfb32137e1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6746414b9f00ef1ee6f4d3ca7be84395 = $(`<div id="html_6746414b9f00ef1ee6f4d3ca7be84395" style="width: 100.0%; height: 100.0%;">Bayport H2</div>`)[0];
+                popup_1cd8a8276e6edd7e62735dfb32137e1b.setContent(html_6746414b9f00ef1ee6f4d3ca7be84395);
+            
+        
+
+        circle_marker_5a580de09a48f9f018560eb24ed5b4e6.bindPopup(popup_1cd8a8276e6edd7e62735dfb32137e1b)
+        ;
+
+        
+    
+    
+            var circle_marker_18f0c55b988a844d31139c31795d54ef = L.circleMarker(
+                [30.23, -90.97],
+                {"bubblingMouseEvents": true, "color": "#4c72b0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4c72b0", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_1c174c9e9d97dcc573bd3c8c897f914e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e93d9b2a2641866b93364309f8d15dcf = $(`<div id="html_e93d9b2a2641866b93364309f8d15dcf" style="width: 100.0%; height: 100.0%;">Geismar LA</div>`)[0];
+                popup_1c174c9e9d97dcc573bd3c8c897f914e.setContent(html_e93d9b2a2641866b93364309f8d15dcf);
+            
+        
+
+        circle_marker_18f0c55b988a844d31139c31795d54ef.bindPopup(popup_1c174c9e9d97dcc573bd3c8c897f914e)
+        ;
+
+        
+    
+    
+            var circle_marker_e851af190cce936799554394242f733b = L.circleMarker(
+                [42.21, -83.15],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_4d534dda0c424bb21863a9045390b9fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e384888e79f95cb1ec0388d804cfc37f = $(`<div id="html_e384888e79f95cb1ec0388d804cfc37f" style="width: 100.0%; height: 100.0%;">Wyandotte MI</div>`)[0];
+                popup_4d534dda0c424bb21863a9045390b9fe.setContent(html_e384888e79f95cb1ec0388d804cfc37f);
+            
+        
+
+        circle_marker_e851af190cce936799554394242f733b.bindPopup(popup_4d534dda0c424bb21863a9045390b9fe)
+        ;
+
+        
+    
+    
+            var circle_marker_f446e050147ea1ff53212908025acdc2 = L.circleMarker(
+                [29.63, -95.01],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_c56f8f7cbc7de806bc2a030d38643fb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7e6e0bd8d1dd742657207006536ff50 = $(`<div id="html_c7e6e0bd8d1dd742657207006536ff50" style="width: 100.0%; height: 100.0%;">Bay Port TX</div>`)[0];
+                popup_c56f8f7cbc7de806bc2a030d38643fb6.setContent(html_c7e6e0bd8d1dd742657207006536ff50);
+            
+        
+
+        circle_marker_f446e050147ea1ff53212908025acdc2.bindPopup(popup_c56f8f7cbc7de806bc2a030d38643fb6)
+        ;
+
+        
+    
+    
+            var circle_marker_6d717be47a3c0702dec124225f7f534f = L.circleMarker(
+                [40.38, -74.55],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_1b49dba2c98ae0d3bc27ed51d2b50c71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ccb72286ddefe6099e65e993b6fdb75 = $(`<div id="html_8ccb72286ddefe6099e65e993b6fdb75" style="width: 100.0%; height: 100.0%;">South Brunswick NJ</div>`)[0];
+                popup_1b49dba2c98ae0d3bc27ed51d2b50c71.setContent(html_8ccb72286ddefe6099e65e993b6fdb75);
+            
+        
+
+        circle_marker_6d717be47a3c0702dec124225f7f534f.bindPopup(popup_1b49dba2c98ae0d3bc27ed51d2b50c71)
+        ;
+
+        
+    
+    
+            var circle_marker_1f068c43fd6f38d1fcd68f3f3850cb71 = L.circleMarker(
+                [34.97, -81.98],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_9e676a630b415fd71a67392d35a04be2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6f1a0f3fed49ca84056108fc5244ee0 = $(`<div id="html_c6f1a0f3fed49ca84056108fc5244ee0" style="width: 100.0%; height: 100.0%;">Whitestone SC</div>`)[0];
+                popup_9e676a630b415fd71a67392d35a04be2.setContent(html_c6f1a0f3fed49ca84056108fc5244ee0);
+            
+        
+
+        circle_marker_1f068c43fd6f38d1fcd68f3f3850cb71.bindPopup(popup_9e676a630b415fd71a67392d35a04be2)
+        ;
+
+        
+    
+    
+            var circle_marker_415d516e7926627f658301bf43c9a18f = L.circleMarker(
+                [22.39, -97.94],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_a6a6d23a3c4206c37c160cccad8c1874 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccf1dac8e7999c14538ea3a007c899ef = $(`<div id="html_ccf1dac8e7999c14538ea3a007c899ef" style="width: 100.0%; height: 100.0%;">Altamira Tamps</div>`)[0];
+                popup_a6a6d23a3c4206c37c160cccad8c1874.setContent(html_ccf1dac8e7999c14538ea3a007c899ef);
+            
+        
+
+        circle_marker_415d516e7926627f658301bf43c9a18f.bindPopup(popup_a6a6d23a3c4206c37c160cccad8c1874)
+        ;
+
+        
+    
+    
+            var circle_marker_707e6965eb00c26dac4721d236531f87 = L.circleMarker(
+                [20.65, -103.32],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_95142245fca389ccf2eb3d44312a0a22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8251e0a2b73f76b3ab050750a1fbe35 = $(`<div id="html_b8251e0a2b73f76b3ab050750a1fbe35" style="width: 100.0%; height: 100.0%;">Tlaquepaque Jal</div>`)[0];
+                popup_95142245fca389ccf2eb3d44312a0a22.setContent(html_b8251e0a2b73f76b3ab050750a1fbe35);
+            
+        
+
+        circle_marker_707e6965eb00c26dac4721d236531f87.bindPopup(popup_95142245fca389ccf2eb3d44312a0a22)
+        ;
+
+        
+    
+    
+            var circle_marker_20e74739cbe55b1aa1099b1259b2d557 = L.circleMarker(
+                [17.96, -102.22],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_403ceb96eefe9c0402dd5c0e5ec1cdc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b55d62c0b91315b26891425dc255d1d = $(`<div id="html_9b55d62c0b91315b26891425dc255d1d" style="width: 100.0%; height: 100.0%;">Lázaro Cárdenas</div>`)[0];
+                popup_403ceb96eefe9c0402dd5c0e5ec1cdc6.setContent(html_9b55d62c0b91315b26891425dc255d1d);
+            
+        
+
+        circle_marker_20e74739cbe55b1aa1099b1259b2d557.bindPopup(popup_403ceb96eefe9c0402dd5c0e5ec1cdc6)
+        ;
+
+        
+    
+    
+            var circle_marker_97998ea8e0a942281ab2573c5a4daa08 = L.circleMarker(
+                [19.29, -99.51],
+                {"bubblingMouseEvents": true, "color": "#55a868", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55a868", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_574637d44b8d100c7a635f2c2fdef42a);
+        
+    
+        var popup_57f66394dc75ccfbb3c0ac33b1f25414 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd027e8487288edca9109cfb9d946d8a = $(`<div id="html_cd027e8487288edca9109cfb9d946d8a" style="width: 100.0%; height: 100.0%;">Lerma EdoMex</div>`)[0];
+                popup_57f66394dc75ccfbb3c0ac33b1f25414.setContent(html_cd027e8487288edca9109cfb9d946d8a);
+            
+        
+
+        circle_marker_97998ea8e0a942281ab2573c5a4daa08.bindPopup(popup_57f66394dc75ccfbb3c0ac33b1f25414)
+        ;
+
+        
+    
+    
+            map_574637d44b8d100c7a635f2c2fdef42a.fitBounds(
+                [[15, -110], [50, -70]],
+                {}
+            );
+        
+</script>
+</html>
